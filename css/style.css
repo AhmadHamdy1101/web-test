@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Nunito:wght@300;400;500;600;700;800;900&family=Oswald:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --main-color: #e8631c;
+    --back-color: #303030;
+    --p-font:'Montserrat', sans-serif;
+    --other-font: 'Oswald', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+header{
+    background-color: var(--back-color);
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+
+}
+header a{
+    color: #fff;
+    font-family: var(--other-font);
+}
+.slide{
+width: 100%;
+height: 113vh;
+overflow:hidden ;
+}
+.slide .container{
+    transform: translateY(50%);
+     height: 100%;
+}
+.back-image{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+
+}
+.back-image img{width: 100%;}
+.slide-text{
+    width: 40%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.slide-text h1{   
+     font-size: 5rem;
+    font-family: var(--other-font);
+    text-transform: capitalize;}
+.slide-text p{
+    font-family: var(--p-font);
+    font-weight: 400;
+    line-height: 20px;
+
+}
+.slide-text a{
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 12px 40px;
+    font-family: var(--other-font);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: fit-content;
+    margin: 15px 0 0 0 ;
+}
+
+.tour{
+    background-color: var(--main-color);
+    width: 100%;
+    height: 100vh;
+    padding: 50px 0;
+}
+.tour .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.title{
+    font-family: var(--other-font);
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.para{
+    width: 60%;
+    font-family: var(--p-font);
+    font-weight: 300;
+
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    background: var(--back-color);
+    color: #fff;
+}
+.card img{
+    width: 100%;
+}
